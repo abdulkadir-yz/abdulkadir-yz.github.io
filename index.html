@@ -3,455 +3,713 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Abdulkadir Yilmaz — Electrical Engineer turned Software Developer. Backend Engineering, Microservices, Cloud &amp; AI." />
-    <title>Abdulkadir Yilmaz | Software Engineer</title>
-    <link rel="icon" type="image/png" href="assets/favicon2.png">
-    <link rel="stylesheet" href="style.css" />
+
+    <title>Abdulkadir Yilmaz | Fullstack Developer </title>
+    <meta name="description" content="Abdulkadir Yilmaz — Fullstack Developer based in Germany. Six years in IT operations: Kubernetes, Linux, identity. Now building the systems I used to deploy and run." />
+    <meta name="author" content="Abdulkadir Yilmaz" />
+    <link rel="canonical" href="https://abdulkadir-yz.github.io/" />
+
+    <!-- Open Graph / LinkedIn -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Abdulkadir Yilmaz | Fullstack Developer" />
+    <meta property="og:description" content="Fullstack developer in Germany. Six years of IT operations — Kubernetes, Linux, identity — now building the systems I used to run." />
+    <meta property="og:url" content="https://abdulkadir-yz.github.io/" />
+    <meta property="og:image" content="https://abdulkadir-yz.github.io/assets/favicon2.png" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="profile:first_name" content="Abdulkadir" />
+    <meta property="profile:last_name" content="Yilmaz" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Abdulkadir Yilmaz | Fullstack Developer" />
+    <meta name="twitter:description" content="Fullstack developer in Germany." />
+
+    <meta name="theme-color" content="#0c0906" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#faf5ea" media="(prefers-color-scheme: light)" />
+
+    <link rel="icon" type="image/png" href="assets/favicon2.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Abdulkadir Yilmaz",
+      "givenName": "Abdulkadir",
+      "familyName": "Yilmaz",
+      "jobTitle": "Fullstack Developer",
+      "description": "Fullstack developer with six years of prior experience in IT operations, Kubernetes and identity management.",
+      "url": "https://abdulkadir-yz.github.io/",
+      "email": "mailto:abdulkadir.yz99@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "DE"
+      },
+      "knowsLanguage": ["tr", "ku", "de", "en"],
+      "sameAs": [
+        "https://github.com/abdulkadir-yz",
+        "https://www.linkedin.com/in/abdulkadir-yilmaz"
+      ],
+      "knowsAbout": [
+        "C#", "ASP.NET Core", "Entity Framework Core", "TypeScript", "React",
+        "Next.js", "Node.js", "Python", "Docker", "Kubernetes", "Azure",
+        "PostgreSQL", "MongoDB", "Keycloak", "LLM integration", "Semantic Kernel"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "WBS Coding School"
+      },
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "degree",
+        "educationalLevel": "Bachelor of Science",
+        "name": "B.Sc. Electrical & Electronics Engineering (Honours)"
+      }
+    }
+    </script>
 </head>
 <body>
 
-    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+<a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- ===== NAVBAR ===== -->
-    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo" aria-label="Home">
-                <svg class="nav-rune" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                KADIR
-                <svg class="nav-rune" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            </a>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#about">The Fellowship</a></li>
-                <li><a href="#experience">Chronicles</a></li>
-                <li><a href="#techstack">Armoury</a></li>
-                <li><a href="#education">The Lore</a></li>
-                <li><a href="#roadmap">The Quest</a></li>
-                <li><a href="#contact">Send a Raven</a></li>
-            </ul>
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle between Light of Valinor and Shadow of Mordor themes">
-                <span class="theme-icon-light" aria-hidden="true">&#9728;&#65039;</span>
-                <span class="theme-icon-dark" aria-hidden="true">&#128293;</span>
-                <span class="theme-label" id="theme-label">Valinor</span>
-            </button>
-            <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
+<!-- ===== ICON SPRITE =====
+     One hand-drawn set on a 24×24 grid, 1.5 stroke. Consistent
+     weight beats mismatched brand logos. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+        <g id="i-rune"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></g>
+        <g id="i-pin"><path d="M12 21.5s7-7.2 7-12.1a7 7 0 1 0-14 0c0 4.9 7 12.1 7 12.1z"/><circle cx="12" cy="9.2" r="2.6"/></g>
+        <g id="i-letter"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.2 8.5-6.2"/></g>
+        <g id="i-tower"><path d="M8.5 21V9.5L12 4l3.5 5.5V21"/><path d="M5.5 21h13M12 10.5v3.5"/><path d="M9.5 21v-3.5h5V21"/></g>
+        <g id="i-codex"><path d="M4 4.5h10.5A3.5 3.5 0 0 1 18 8v11.5H7.5A3.5 3.5 0 0 1 4 16z"/><path d="M4 16a3.5 3.5 0 0 1 3.5-3.5H18M8 8h6"/></g>
+        <g id="i-cap"><path d="m12 4 9.5 4.6L12 13.2 2.5 8.6z"/><path d="M6.5 10.7V16c0 1.7 2.5 3 5.5 3s5.5-1.3 5.5-3v-5.3"/></g>
+        <g id="i-globe"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.8 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.8-3.8-9S9.5 5.6 12 3z"/></g>
+        <g id="i-sword"><path d="M14.5 3.5h6v6L11 19H8v-3z"/><path d="m5 19 3 3M4.5 16.5 7.5 19.5"/></g>
+        <g id="i-shield"><path d="m12 2.5 8 3v6.2c0 4.9-3.3 9.1-8 10.8-4.7-1.7-8-5.9-8-10.8V5.5z"/><path d="m8.8 12 2.2 2.2 4.2-4.4"/></g>
+        <g id="i-spark"><path d="m12 2.5 2.2 6.3 6.3 2.2-6.3 2.2L12 19.5 9.8 13.2 3.5 11l6.3-2.2z"/><path d="M18.5 17.5 20 21M5.5 3.5 4 6.5"/></g>
+        <g id="i-external"><path d="M14 3.5h6.5V10"/><path d="M20.5 3.5 11 13"/><path d="M18 14.5V19a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 19V8a1.5 1.5 0 0 1 1.5-1.5H10"/></g>
+    </defs>
+</svg>
 
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="hero" aria-labelledby="hero-name">
-        <div class="hero-mountains" aria-hidden="true">
-            <svg viewBox="0 0 1440 280" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0,280 L0,170 L100,65 L185,135 L285,35 L385,115 L480,25 L580,105 L680,45 L775,125 L875,18 L975,108 L1075,38 L1175,118 L1275,55 L1375,138 L1440,88 L1440,280 Z" fill="var(--mountain-1)"/>
-                <path d="M0,280 L0,200 L80,145 L175,195 L275,115 L395,185 L500,98 L600,168 L715,88 L815,168 L935,98 L1035,178 L1155,108 L1275,178 L1375,128 L1440,158 L1440,280 Z" fill="var(--mountain-2)"/>
-                <path d="M0,280 L0,240 L95,198 L195,235 L315,172 L435,232 L555,162 L678,232 L798,158 L918,232 L1038,168 L1158,238 L1278,168 L1390,238 L1440,208 L1440,280 Z" fill="var(--mountain-3)"/>
-            </svg>
-        </div>
+<canvas id="particles-canvas" aria-hidden="true"></canvas>
 
-        <div class="hero-content">
-            <p class="hero-greeting">Mae govannen</p>
-            <h1 class="hero-name" id="hero-name">Abdulkadir Yilmaz</h1>
-            <p class="hero-title">Electrical Engineer &#8594; Software Developer</p>
-            <p class="hero-subtitle">IT Consultant &middot; Backend Engineering &middot; Microservices &middot; Cloud &amp; AI</p>
-            <div class="hero-location">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                Germany
-            </div>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Send a Raven</a>
-                <a href="#about" class="btn btn-secondary">Begin the Journey</a>
-            </div>
-            <blockquote class="hero-quote">
-                &ldquo;All we have to decide is what to do with the time that is given us.&rdquo;
-                <cite>&#8212; Gandalf</cite>
-            </blockquote>
-        </div>
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+        <a href="#hero" class="nav-logo" aria-label="Back to top">
+            <svg class="nav-rune" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-rune"/></svg>
+            KADIR
+        </a>
 
-        <div class="hero-visual">
-            <div class="palantir-wrap">
-                <div class="palantir-glow" aria-hidden="true"></div>
-                <div class="terminal" role="region" aria-label="Palantir Terminal">
-                    <div class="terminal-header">
-                        <span class="terminal-dot red" aria-hidden="true"></span>
-                        <span class="terminal-dot yellow" aria-hidden="true"></span>
-                        <span class="terminal-dot green" aria-hidden="true"></span>
-                        <span class="terminal-title">palantir@middle-earth ~</span>
-                    </div>
-                    <div class="terminal-body">
-                        <p class="terminal-line"><span class="prompt">&#5819;</span>&nbsp;<span class="cmd" id="typed-text"></span><span class="cursor" aria-hidden="true">&#9608;</span></p>
-                        <p class="terminal-output" id="terminal-output" aria-live="polite"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about">Fellowship</a></li>
+            <li><a href="#experience">Chronicles</a></li>
+            <li><a href="#projects">Artifacts</a></li>
+            <li><a href="#techstack">Armoury</a></li>
+            <li><a href="#roadmap">The Quest</a></li>
+            <li><a href="#contact">Raven</a></li>
+        </ul>
 
-    <!-- vine divider -->
-    <div class="vine-divider" aria-hidden="true">
-        <svg viewBox="0 0 800 28" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-            <path d="M0,14 Q100,2 200,14 Q300,26 400,14 Q500,2 600,14 Q700,26 800,14" fill="none" stroke="var(--accent)" stroke-width="1.2" opacity="0.4"/>
-            <path d="M0,14 Q100,26 200,14 Q300,2 400,14 Q500,26 600,14 Q700,2 800,14" fill="none" stroke="var(--accent)" stroke-width="0.6" opacity="0.22"/>
-            <circle cx="400" cy="14" r="3" fill="var(--accent)" opacity="0.5"/>
-            <circle cx="200" cy="14" r="1.8" fill="var(--accent)" opacity="0.35"/>
-            <circle cx="600" cy="14" r="1.8" fill="var(--accent)" opacity="0.35"/>
-            <text x="120" y="10" text-anchor="middle" font-size="8" fill="var(--accent)" opacity="0.35" font-family="serif">&#10022;</text>
-            <text x="680" y="10" text-anchor="middle" font-size="8" fill="var(--accent)" opacity="0.35" font-family="serif">&#10022;</text>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Switch between the Shadow of Mordor and Light of Valinor themes">
+            <span class="theme-icon-light" aria-hidden="true">&#9788;</span>
+            <span class="theme-icon-dark" aria-hidden="true">&#9790;</span>
+            <span class="theme-label" id="theme-label">Mordor</span>
+        </button>
+
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="nav-progress" id="nav-progress" aria-hidden="true"></div>
+</nav>
+
+<main id="main">
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero" aria-labelledby="hero-name">
+    <div class="hero-mountains" aria-hidden="true">
+        <svg viewBox="0 0 1440 280" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,280 L0,170 L100,65 L185,135 L285,35 L385,115 L480,25 L580,105 L680,45 L775,125 L875,18 L975,108 L1075,38 L1175,118 L1275,55 L1375,138 L1440,88 L1440,280 Z" fill="var(--mountain-1)"/>
+            <path d="M0,280 L0,200 L80,145 L175,195 L275,115 L395,185 L500,98 L600,168 L715,88 L815,168 L935,98 L1035,178 L1155,108 L1275,178 L1375,128 L1440,158 L1440,280 Z" fill="var(--mountain-2)"/>
+            <path d="M0,280 L0,240 L95,198 L195,235 L315,172 L435,232 L555,162 L678,232 L798,158 L918,232 L1038,168 L1158,238 L1278,168 L1390,238 L1440,208 L1440,280 Z" fill="var(--mountain-3)"/>
         </svg>
     </div>
 
-    <!-- ===== ABOUT / THE FELLOWSHIP ===== -->
-    <section class="section" id="about" aria-labelledby="about-title">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-chapter" aria-hidden="true">Chapter I</span>
-                <h2 class="section-title" id="about-title">The Fellowship</h2>
-                <p class="section-tagline">&ldquo;Not all those who wander are lost.&rdquo; &#8212; J.R.R. Tolkien</p>
-            </div>
-            <div class="about-grid">
-                <div class="about-text parchment-card fade-in">
-                    <p>A traveller hailing from distant lands, I carry an <strong>Honor&rsquo;s Degree in Electrical &amp; Electronic Engineering</strong> (GPA 3.43/4.00) &mdash; forged through years of study and discipline. My path has wound through the cybersecurity stronghold of <strong>KOBIL GmbH</strong> in Worms, the healing halls of <strong>Mespa Medical</strong>, and the innovation forge of <strong>Liberta Software</strong>.</p>
-                    <p>In these journeys I wielded <strong>Kubernetes, Docker, Linux servers, and enterprise applications</strong> &mdash; learning how the great machines of production truly work, where they fail, and how to mend them when they do.</p>
-                    <p>Now I walk the deliberate road toward <strong>software craftsmanship</strong> &mdash; building backend systems, architecting microservices, and weaving AI into the fabric of modern applications. Currently sharpening my blade at <strong>WBS Coding School</strong>, Software Engineering &amp; AI Bootcamp.</p>
-                </div>
-                <div class="about-highlights">
-                    <div class="highlight-card fade-in">
-                        <span class="highlight-icon" aria-hidden="true">&#127891;</span>
-                        <div><strong>Honor&rsquo;s Degree</strong><p>Electrical &amp; Electronic Eng.</p></div>
-                    </div>
-                    <div class="highlight-card fade-in">
-                        <span class="highlight-icon" aria-hidden="true">&#127984;</span>
-                        <div><strong>5+ Companies</strong><p>IT Consulting &amp; Engineering</p></div>
-                    </div>
-                    <div class="highlight-card fade-in">
-                        <span class="highlight-icon" aria-hidden="true">&#129302;</span>
-                        <div><strong>AI &amp; Agentic Systems</strong><p>LLMs, Prompt Engineering</p></div>
-                    </div>
-                    <div class="highlight-card fade-in">
-                        <span class="highlight-icon" aria-hidden="true">&#127757;</span>
-                        <div><strong>4 Tongues</strong><p>Turkish &middot; Kurdish &middot; German &middot; English</p></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="hero-content">
+        <p class="hero-greeting">Mae govannen &mdash; well met</p>
+        <h1 class="hero-name" id="hero-name">Abdulkadir Yilmaz</h1>
+        <p class="hero-title">Fullstack Developer</p>
+        <p class="hero-subtitle">Six years spent running the systems I now build &mdash; Kubernetes, Linux, identity, release management.</p>
 
-    <div class="vine-divider" aria-hidden="true"><svg viewBox="0 0 800 28" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"><path d="M0,14 Q100,2 200,14 Q300,26 400,14 Q500,2 600,14 Q700,26 800,14" fill="none" stroke="var(--accent)" stroke-width="1.2" opacity="0.4"/><path d="M0,14 Q100,26 200,14 Q300,2 400,14 Q500,26 600,14 Q700,2 800,14" fill="none" stroke="var(--accent)" stroke-width="0.6" opacity="0.22"/><circle cx="400" cy="14" r="3" fill="var(--accent)" opacity="0.5"/></svg></div>
-
-    <!-- ===== EXPERIENCE / THE CHRONICLES ===== -->
-    <section class="section section-alt" id="experience" aria-labelledby="experience-title">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-chapter" aria-hidden="true">Chapter II</span>
-                <h2 class="section-title" id="experience-title">The Chronicles</h2>
-                <p class="section-tagline">A record of quests undertaken across the known world</p>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item fade-in">
-                    <div class="timeline-marker" aria-hidden="true"><span class="marker-age">IV</span></div>
-                    <div class="timeline-content">
-                        <span class="timeline-age">The Fourth Age &middot; 2025 &ndash; Present</span>
-                        <h3>IT Consultant &amp; Support</h3>
-                        <h4>L&amp;M Immobilien GmbH &amp; Luma Transport GmbH &mdash; Germany</h4>
-                        <p>Since 2025, attending German language academies while supporting these establishments in the arts of digital infrastructure &mdash; website design, digital media content creation, and technical automations. Building the tools that keep the guild running.</p>
-                        <div class="timeline-tags" aria-label="Skills">
-                            <span>IT Consulting</span><span>Digital Transformation</span><span>AI Automation</span><span>Social Media</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-marker" aria-hidden="true"><span class="marker-age">III</span></div>
-                    <div class="timeline-content">
-                        <span class="timeline-age">The Third Age &middot; KOBIL GmbH, Worms</span>
-                        <h3>Project Manager &amp; IT Consultant</h3>
-                        <h4>KOBIL GmbH, Worms &mdash; Cybersecurity Stronghold &#128272;</h4>
-                        <p>In the fortified citadel of KOBIL &mdash; guardian of enterprise identity &amp; security &mdash; I managed app versions, authored technical documentation, handled customer integrations, and supported the engineering company in their daily battles against digital threats.</p>
-                        <div class="timeline-tags" aria-label="Skills">
-                            <span>Kubernetes</span><span>Docker</span><span>Keycloak</span><span>Technical Documentation</span><span>Customer Integration</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-marker" aria-hidden="true"><span class="marker-age">II</span></div>
-                    <div class="timeline-content">
-                        <span class="timeline-age">The Second Age &middot; Mespa Medical, Turkey</span>
-                        <h3>Planning Officer &amp; IT Consultant</h3>
-                        <h4>Mespa Medical &mdash; The Healing Arts Division &#127973;</h4>
-                        <p>In the lands of the East, I served the healers of Mespa Medical &mdash; bridging the ancient arts of medicine with the modern sciences of information technology. Project planning, IT consulting, and strategic counsel to connect technical teams with business operations.</p>
-                        <div class="timeline-tags" aria-label="Skills">
-                            <span>IT Consulting</span><span>Project Planning</span><span>Medical Tech</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item fade-in">
-                    <div class="timeline-marker" aria-hidden="true"><span class="marker-age">I</span></div>
-                    <div class="timeline-content">
-                        <span class="timeline-age">The First Age &middot; Liberta Software Inc.</span>
-                        <h3>R&amp;D Engineer <em>(Student &#8594; Full-Time)</em></h3>
-                        <h4>Liberta Software Inc. &mdash; The Innovation Forge &#129302;</h4>
-                        <p>Where the journey began &mdash; as a student-apprentice rising to full craftsman. I developed barcode sensor systems in fellowship with <strong>SICK AG</strong> and programmed a veterinary health tracking application. Embedded systems, software development, and research &mdash; the foundation of all that followed.</p>
-                        <div class="timeline-tags" aria-label="Skills">
-                            <span>R&amp;D</span><span>Embedded Systems</span><span>Barcode Sensors</span><span>SICK AG</span><span>App Development</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="vine-divider" aria-hidden="true"><svg viewBox="0 0 800 28" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"><path d="M0,14 Q100,2 200,14 Q300,26 400,14 Q500,2 600,14 Q700,26 800,14" fill="none" stroke="var(--accent)" stroke-width="1.2" opacity="0.4"/><path d="M0,14 Q100,26 200,14 Q300,2 400,14 Q500,26 600,14 Q700,2 800,14" fill="none" stroke="var(--accent)" stroke-width="0.6" opacity="0.22"/><circle cx="400" cy="14" r="3" fill="var(--accent)" opacity="0.5"/></svg></div>
-
-    <!-- ===== TECH STACK / THE ARMOURY ===== -->
-    <section class="section" id="techstack" aria-labelledby="techstack-title">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-chapter" aria-hidden="true">Chapter III</span>
-                <h2 class="section-title" id="techstack-title">The Armoury</h2>
-                <p class="section-tagline">Weapons and instruments gathered across many campaigns</p>
-            </div>
-            <div class="tech-categories">
-                <div class="tech-category fade-in">
-                    <div class="tech-cat-header">
-                        <span class="tech-cat-icon" aria-hidden="true">&#9876;&#65039;</span>
-                        <div>
-                            <h3>Weapons of War</h3>
-                            <p class="tech-label">Infrastructure &amp; DevOps &mdash; Hands-on battle experience</p>
-                        </div>
-                    </div>
-                    <div class="tech-grid">
-                        <div class="tech-item">&#128051; Docker</div>
-                        <div class="tech-item">&#9096;&#65039; Kubernetes</div>
-                        <div class="tech-item">&#8904; Helm</div>
-                        <div class="tech-item">&#128272; Keycloak</div>
-                        <div class="tech-item">&#128039; Linux</div>
-                        <div class="tech-item">&#129695; Windows Server</div>
-                    </div>
-                </div>
-                <div class="tech-category fade-in">
-                    <div class="tech-cat-header">
-                        <span class="tech-cat-icon" aria-hidden="true">&#128220;</span>
-                        <div>
-                            <h3>Ancient Tongues</h3>
-                            <p class="tech-label">Programming &amp; Scripting &mdash; Hands-on mastery</p>
-                        </div>
-                    </div>
-                    <div class="tech-grid">
-                        <div class="tech-item">&#128013; Python</div>
-                        <div class="tech-item">&#9889; JavaScript</div>
-                        <div class="tech-item">&#127760; HTML5</div>
-                        <div class="tech-item">&#127912; CSS3</div>
-                    </div>
-                </div>
-                <div class="tech-category fade-in">
-                    <div class="tech-cat-header">
-                        <span class="tech-cat-icon" aria-hidden="true">&#128301;</span>
-                        <div>
-                            <h3>Instruments of Craft</h3>
-                            <p class="tech-label">Testing &amp; Project Tools &mdash; Daily implements</p>
-                        </div>
-                    </div>
-                    <div class="tech-grid">
-                        <div class="tech-item">&#128238; Postman</div>
-                        <div class="tech-item">&#128203; Jira</div>
-                        <div class="tech-item">&#128221; Confluence</div>
-                    </div>
-                </div>
-                <div class="tech-category fade-in">
-                    <div class="tech-cat-header">
-                        <span class="tech-cat-icon" aria-hidden="true">&#128302;</span>
-                        <div>
-                            <h3>Forging New Powers</h3>
-                            <p class="tech-label">Currently in the forge &mdash; WBS Coding School</p>
-                        </div>
-                    </div>
-                    <div class="tech-grid">
-                        <div class="tech-item learning">&#128311; TypeScript</div>
-                        <div class="tech-item learning">&#9883;&#65039; React</div>
-                        <div class="tech-item learning">&#128995; C# / ASP.NET</div>
-                        <div class="tech-item learning">&#9729;&#65039; Azure</div>
-                        <div class="tech-item learning">&#128452;&#65039; SQL</div>
-                        <div class="tech-item learning">&#127798;&#65039; Flask</div>
-                        <div class="tech-item learning">&#128256; Git</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="vine-divider" aria-hidden="true"><svg viewBox="0 0 800 28" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"><path d="M0,14 Q100,2 200,14 Q300,26 400,14 Q500,2 600,14 Q700,26 800,14" fill="none" stroke="var(--accent)" stroke-width="1.2" opacity="0.4"/><path d="M0,14 Q100,26 200,14 Q300,2 400,14 Q500,26 600,14 Q700,2 800,14" fill="none" stroke="var(--accent)" stroke-width="0.6" opacity="0.22"/><circle cx="400" cy="14" r="3" fill="var(--accent)" opacity="0.5"/></svg></div>
-
-    <!-- ===== EDUCATION / THE LORE ===== -->
-    <section class="section section-alt" id="education" aria-labelledby="education-title">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-chapter" aria-hidden="true">Chapter IV</span>
-                <h2 class="section-title" id="education-title">The Lore</h2>
-                <p class="section-tagline">Scrolls of knowledge gathered from the great libraries</p>
-            </div>
-            <div class="edu-grid">
-                <div class="edu-card fade-in">
-                    <div class="edu-icon" aria-hidden="true">&#127885;</div>
-                    <h3>B.Sc. Electrical &amp; Electronic Engineering</h3>
-                    <p>Honor Degree &mdash; GPA 3.43 / 4.00</p>
-                    <span class="edu-badge completed">Quest Completed</span>
-                </div>
-                <div class="edu-card fade-in">
-                    <div class="edu-icon" aria-hidden="true">&#128216;</div>
-                    <h3>Software Engineering &amp; AI Bootcamp</h3>
-                    <p>WBS Coding School &mdash; 2026&ndash;2027</p>
-                    <span class="edu-badge progress">On the Journey</span>
-                </div>
-                <div class="edu-card fade-in">
-                    <div class="edu-icon" aria-hidden="true">&#9729;&#65039;</div>
-                    <h3>AZ-900 Microsoft Azure Fundamentals</h3>
-                    <p>Microsoft Certification</p>
-                    <span class="edu-badge progress">On the Journey</span>
-                </div>
-                <div class="edu-card fade-in">
-                    <div class="edu-icon" aria-hidden="true">&#128013;</div>
-                    <h3>PCEP &ndash; Python Entry-Level Programmer</h3>
-                    <p>Python Institute Certification</p>
-                    <span class="edu-badge progress">On the Journey</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="vine-divider" aria-hidden="true"><svg viewBox="0 0 800 28" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"><path d="M0,14 Q100,2 200,14 Q300,26 400,14 Q500,2 600,14 Q700,26 800,14" fill="none" stroke="var(--accent)" stroke-width="1.2" opacity="0.4"/><path d="M0,14 Q100,26 200,14 Q300,2 400,14 Q500,26 600,14 Q700,2 800,14" fill="none" stroke="var(--accent)" stroke-width="0.6" opacity="0.22"/><circle cx="400" cy="14" r="3" fill="var(--accent)" opacity="0.5"/></svg></div>
-
-    <!-- ===== ROADMAP / THE QUEST ===== -->
-    <section class="section" id="roadmap" aria-labelledby="roadmap-title">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-chapter" aria-hidden="true">Chapter V</span>
-                <h2 class="section-title" id="roadmap-title">The Quest</h2>
-                <p class="section-tagline">&ldquo;Even the smallest person can change the course of the future.&rdquo; &mdash; Galadriel</p>
-            </div>
-            <div class="quest-map" role="list" aria-label="Career roadmap">
-                <div class="quest-node active fade-in" role="listitem">
-                    <div class="quest-pin" aria-hidden="true">
-                        <svg viewBox="0 0 40 52" width="44" height="56" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 2C10 2 2 10 2 20c0 14 18 30 18 30s18-16 18-30C38 10 30 2 20 2z" fill="var(--accent)"/>
-                            <circle cx="20" cy="20" r="8" fill="var(--bg-primary)"/>
-                            <text x="20" y="24" text-anchor="middle" font-size="8" fill="var(--accent)" font-weight="bold" font-family="JetBrains Mono, monospace">01</text>
-                        </svg>
-                    </div>
-                    <span class="quest-place">The Shire</span>
-                    <div class="quest-card">
-                        <h3>Backend Engineer</h3>
-                        <ul>
-                            <li>C# / ASP.NET</li>
-                            <li>RESTful APIs</li>
-                            <li>SQL / Databases</li>
-                        </ul>
-                        <span class="quest-status quest-active">&#9876;&#65039; Current Quest</span>
-                    </div>
-                </div>
-                <div class="quest-path" aria-hidden="true">
-                    <svg viewBox="0 0 100 18" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4,9 Q25,2 50,9 Q75,16 96,9" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.55"/>
-                        <polygon points="91,6 99,9 91,12" fill="var(--accent)" opacity="0.55"/>
-                    </svg>
-                </div>
-                <div class="quest-node fade-in" role="listitem">
-                    <div class="quest-pin" aria-hidden="true">
-                        <svg viewBox="0 0 40 52" width="44" height="56" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 2C10 2 2 10 2 20c0 14 18 30 18 30s18-16 18-30C38 10 30 2 20 2z" fill="var(--accent-muted)" opacity="0.7"/>
-                            <circle cx="20" cy="20" r="8" fill="var(--bg-primary)"/>
-                            <text x="20" y="24" text-anchor="middle" font-size="8" fill="var(--accent)" font-weight="bold" font-family="JetBrains Mono, monospace">02</text>
-                        </svg>
-                    </div>
-                    <span class="quest-place">Rivendell</span>
-                    <div class="quest-card">
-                        <h3>Microservices Architect</h3>
-                        <ul>
-                            <li>Docker / Kubernetes</li>
-                            <li>API Gateway</li>
-                            <li>CI/CD Pipelines</li>
-                        </ul>
-                        <span class="quest-status quest-future">&#128506;&#65039; On the Map</span>
-                    </div>
-                </div>
-                <div class="quest-path" aria-hidden="true">
-                    <svg viewBox="0 0 100 18" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4,9 Q25,2 50,9 Q75,16 96,9" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.55"/>
-                        <polygon points="91,6 99,9 91,12" fill="var(--accent)" opacity="0.55"/>
-                    </svg>
-                </div>
-                <div class="quest-node fade-in" role="listitem">
-                    <div class="quest-pin" aria-hidden="true">
-                        <svg viewBox="0 0 40 52" width="44" height="56" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 2C10 2 2 10 2 20c0 14 18 30 18 30s18-16 18-30C38 10 30 2 20 2z" fill="var(--accent-muted)" opacity="0.45"/>
-                            <circle cx="20" cy="20" r="8" fill="var(--bg-primary)"/>
-                            <text x="20" y="24" text-anchor="middle" font-size="8" fill="var(--accent)" font-weight="bold" font-family="JetBrains Mono, monospace">03</text>
-                        </svg>
-                    </div>
-                    <span class="quest-place">MORDOR</span>
-                    <div class="quest-card">
-                        <h3>Cloud &amp; AI Integration</h3>
-                        <ul>
-                            <li>Azure / LLMs</li>
-                            <li>Agentic Systems</li>
-                            <li>OpenAI / LangFlow</li>
-                        </ul>
-                        <span class="quest-status quest-future">&#127775; The Horizon</span>
-                    </div>
-                </div>
-            </div>
-            <blockquote class="roadmap-quote fade-in">
-                &ldquo;Engineering taught me how systems fail. Software engineering teaches me how to build ones that don&rsquo;t.&rdquo; &#128640;
-            </blockquote>
-        </div>
-    </section>
-
-    <div class="vine-divider" aria-hidden="true"><svg viewBox="0 0 800 28" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"><path d="M0,14 Q100,2 200,14 Q300,26 400,14 Q500,2 600,14 Q700,26 800,14" fill="none" stroke="var(--accent)" stroke-width="1.2" opacity="0.4"/><path d="M0,14 Q100,26 200,14 Q300,2 400,14 Q500,26 600,14 Q700,2 800,14" fill="none" stroke="var(--accent)" stroke-width="0.6" opacity="0.22"/><circle cx="400" cy="14" r="3" fill="var(--accent)" opacity="0.5"/></svg></div>
-
-    <!-- ===== CONTACT / SEND A RAVEN ===== -->
-    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
-        <div class="container">
-            <div class="section-header fade-in">
-                <span class="section-chapter" aria-hidden="true">Chapter VI</span>
-                <h2 class="section-title" id="contact-title">Send a Raven</h2>
-                <p class="section-tagline">The ravens of Erebor carry messages swiftly across the known world</p>
-            </div>
-            <p class="contact-text">Open to new quests, fellowships, and conversations about backend engineering, cloud architectures, and AI systems.</p>
-            <div class="contact-links">
-                <a href="mailto:abdulkadir.yz99@gmail.com" class="contact-card fade-in" aria-label="Send email to abdulkadir.yz99@gmail.com">
-                    <span class="contact-icon" aria-hidden="true">&#128220;</span>
-                    <strong>By Scroll</strong>
-                    <p>abdulkadir.yz99@gmail.com</p>
-                </a>
-                <a href="https://www.linkedin.com/in/abdulkadiryilmaz" target="_blank" rel="noopener noreferrer" class="contact-card fade-in" aria-label="LinkedIn profile (opens in new tab)">
-                    <span class="contact-icon" aria-hidden="true">&#9876;&#65039;</span>
-                    <strong>The Guild Hall</strong>
-                    <p>LinkedIn &middot; abdulkadiryilmaz</p>
-                </a>
-                <a href="https://github.com/abdulkadir-yz" target="_blank" rel="noopener noreferrer" class="contact-card fade-in" aria-label="GitHub profile (opens in new tab)">
-                    <span class="contact-icon" aria-hidden="true">&#128760;</span>
-                    <strong>The Codex</strong>
-                    <p>GitHub &middot; abdulkadir-yz</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <div class="footer-ring" aria-hidden="true">
-            <svg viewBox="0 0 280 52" xmlns="http://www.w3.org/2000/svg" width="280" height="52">
-                <ellipse cx="140" cy="26" rx="128" ry="19" fill="none" stroke="var(--accent)" stroke-width="1.2" opacity="0.3"/>
-                <ellipse cx="140" cy="26" rx="108" ry="13" fill="none" stroke="var(--accent)" stroke-width="0.6" opacity="0.18"/>
-            </svg>
-        </div>
-        <p class="footer-inscription" aria-label="One Code to rule them all, One Code to find them, One Code to bring them all and in the darkness bind them.">
-            <em>&ldquo;One Code to rule them all, One Code to find them,<br>One Code to bring them all and in the darkness bind them.&rdquo;</em>
+        <p class="hero-location">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-pin"/></svg>
+            Germany
         </p>
-        <p class="footer-copy">&copy; 2026 Abdulkadir Yilmaz &middot; Built with passion and <span class="footer-code">clean code</span></p>
-    </footer>
 
-    <script src="script.js"></script>
+        <div class="hero-stats">
+            <div class="hero-stat"><b>~6 yrs</b><span>In IT &amp; Ops</span></div>
+            <div class="hero-stat"><b>6</b><span>Projects shipped</span></div>
+            <div class="hero-stat"><b>4</b><span>Languages</span></div>
+        </div>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">See the Artifacts</a>
+            <a href="#contact" class="btn btn-secondary">Send a Raven</a>
+        </div>
+
+        <blockquote class="hero-quote">
+            &ldquo;All we have to decide is what to do with the time that is given us.&rdquo;
+            <cite>&mdash; Gandalf</cite>
+        </blockquote>
+    </div>
+
+    <div class="hero-visual">
+        <div class="palantir-wrap">
+            <div class="palantir-glow" aria-hidden="true"></div>
+            <div class="terminal" role="region" aria-label="Palantir terminal, decorative">
+                <div class="terminal-header">
+                    <span class="terminal-dot red" aria-hidden="true"></span>
+                    <span class="terminal-dot yellow" aria-hidden="true"></span>
+                    <span class="terminal-dot green" aria-hidden="true"></span>
+                    <span class="terminal-title">palantir@middle-earth ~</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="terminal-line"><span class="prompt">&#5819;</span>&nbsp;<span class="cmd" id="typed-text"></span><span class="cursor" aria-hidden="true">&#9608;</span></p>
+                    <p class="terminal-output" id="terminal-output"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== CHAPTER I — THE FELLOWSHIP ===== -->
+<section class="section" id="about" aria-labelledby="about-title">
+    <div class="container">
+        <header class="section-header fade-in">
+            <span class="section-chapter">Chapter I</span>
+            <h2 class="section-title" id="about-title">The Fellowship</h2>
+            <svg class="filigree" viewBox="0 0 168 14" fill="none" stroke="currentColor" aria-hidden="true"><path d="M2 7h56M110 7h56" stroke-width="1"/><path d="M84 1.5 89 7l-5 5.5L79 7z" fill="currentColor" stroke="none"/><circle cx="66" cy="7" r="1.8" fill="currentColor" stroke="none"/><circle cx="102" cy="7" r="1.8" fill="currentColor" stroke="none"/><path d="M58 7c4-4 8-4 8 0-4 4-8 4-8 0z" fill="currentColor" stroke="none" opacity=".55"/><path d="M110 7c-4-4-8-4-8 0 4 4 8 4 8 0z" fill="currentColor" stroke="none" opacity=".55"/></svg>
+            <p class="section-tagline">&ldquo;Not all those who wander are lost.&rdquo; &mdash; J.R.R. Tolkien</p>
+        </header>
+
+        <div class="about-grid">
+            <div class="about-text parchment fade-in">
+                <p>Six years on the operations side of software taught me what happens <em>after</em> the merge. At <strong>KOBIL GmbH</strong> &mdash; a cybersecurity and identity stronghold &mdash; I managed application versions, wrote the technical documentation, and carried customer integrations, working shoulder to shoulder with the engineering team. Before that came planning, IT consulting, and R&amp;D on industrial sensor systems.</p>
+                <p>That history shapes how I write code now. I care about deployability, clear API contracts, and what becomes of a service once it ships &mdash; not only whether the tests are green.</p>
+                <p>Today I build across the whole stack: <strong>ASP.NET Core</strong> and <strong>Node.js</strong> services at one end, <strong>React</strong> and <strong>Next.js</strong> interfaces at the other, with my centre of gravity firmly on the backend &mdash; API design, data modelling, integration work. Current focus: backend services, and putting language models into production without pretending they are magic.</p>
+                <p>AI-assisted development is part of that workflow rather than an experiment: <strong>Claude Code</strong> in the terminal for finding my way through unfamiliar code and refactoring across files, and locally hosted models where data has to stay on the machine. Knowing when the tool genuinely helps &mdash; and when it is producing plausible code I would have to unpick later &mdash; is the part that takes judgement.</p>
+            </div>
+
+            <div class="about-highlights">
+                <div class="highlight-card fade-in">
+                    <span class="highlight-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-cap"/></svg></span>
+                    <div>
+                        <strong>B.Sc. with Honours</strong>
+                        <p>Electrical &amp; Electronics Eng. &middot; GPA 3.43 &middot; ZAB-recognised</p>
+                    </div>
+                </div>
+                <div class="highlight-card fade-in">
+                    <span class="highlight-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-shield"/></svg></span>
+                    <div>
+                        <strong>~6 Years in IT</strong>
+                        <p>Consulting, infrastructure &amp; R&amp;D</p>
+                    </div>
+                </div>
+                <div class="highlight-card fade-in">
+                    <span class="highlight-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-spark"/></svg></span>
+                    <div>
+                        <strong>Backend &amp; AI</strong>
+                        <p>APIs, cloud &amp; LLM integration</p>
+                    </div>
+                </div>
+                <div class="highlight-card fade-in">
+                    <span class="highlight-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><use href="#i-globe"/></svg></span>
+                    <div>
+                        <strong>Four Tongues</strong>
+                        <p>Turkish &amp; Kurdish (native) &middot; German &middot; English</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CHAPTER II — THE CHRONICLES ===== -->
+<section class="section section-alt" id="experience" aria-labelledby="experience-title">
+    <div class="container">
+        <header class="section-header fade-in">
+            <span class="section-chapter">Chapter II</span>
+            <h2 class="section-title" id="experience-title">The Chronicles</h2>
+            <svg class="filigree" viewBox="0 0 168 14" fill="none" stroke="currentColor" aria-hidden="true"><path d="M2 7h56M110 7h56" stroke-width="1"/><path d="M84 1.5 89 7l-5 5.5L79 7z" fill="currentColor" stroke="none"/><circle cx="66" cy="7" r="1.8" fill="currentColor" stroke="none"/><circle cx="102" cy="7" r="1.8" fill="currentColor" stroke="none"/><path d="M58 7c4-4 8-4 8 0-4 4-8 4-8 0z" fill="currentColor" stroke="none" opacity=".55"/><path d="M110 7c-4-4-8-4-8 0 4 4 8 4 8 0z" fill="currentColor" stroke="none" opacity=".55"/></svg>
+            <p class="section-tagline">A record of quests undertaken across the known world</p>
+        </header>
+
+        <ol class="timeline">
+            <li class="timeline-item fade-in">
+                <div class="timeline-marker" aria-hidden="true"><span class="marker-age">NOW</span></div>
+                <div class="timeline-content parchment">
+                    <span class="timeline-age">The Present Age &middot; 2026 &ndash; Now</span>
+                    <h3>Software Engineering &amp; AI</h3>
+                    <h4>WBS Coding School (AZAV-certified) &mdash; Germany</h4>
+                    <p>A full-time reforging: JavaScript and Python fundamentals through React, Next.js and Node, now onto C# and ASP.NET Core. Alongside the curriculum I am building a private SaaS product end to end &mdash; ASP.NET Core backend, Next.js frontend, LLM orchestration via Semantic Kernel, Stripe for payments, Azure for deployment.</p>
+                    <div class="timeline-tags" aria-label="Focus areas">
+                        <span class="tag">C# / ASP.NET Core</span><span class="tag">TypeScript</span><span class="tag">React &amp; Next.js</span><span class="tag">Semantic Kernel</span><span class="tag">Azure</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="timeline-item fade-in">
+                <div class="timeline-marker" aria-hidden="true"><span class="marker-age">IV</span></div>
+                <div class="timeline-content parchment">
+                    <span class="timeline-age">The Fourth Age &middot; 2025 &ndash; 2026</span>
+                    <h3>IT Consultant &amp; Support</h3>
+                    <h4>L&amp;M Immobilien GmbH &amp; Luma Transport GmbH &mdash; Germany</h4>
+                    <p>While attending German language academies, I kept the digital infrastructure of two small businesses running &mdash; website work, digital media, and the technical automations that spare people an hour of clicking every day.</p>
+                    <div class="timeline-tags" aria-label="Skills">
+                        <span class="tag">IT Consulting</span><span class="tag">Automation</span><span class="tag">Web</span><span class="tag">Digital Media</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="timeline-item fade-in">
+                <div class="timeline-marker" aria-hidden="true"><span class="marker-age">III</span></div>
+                <div class="timeline-content parchment">
+                    <span class="timeline-age">The Third Age &middot; Germany</span>
+                    <h3>Project Manager &amp; IT Consultant</h3>
+                    <h4>KOBIL GmbH &mdash; the cybersecurity &amp; identity stronghold</h4>
+                    <p>Inside a company whose product <em>is</em> trust, I managed application versions and releases, authored the technical documentation customers actually had to follow, and ran integrations alongside the engineering team. This is where Kubernetes, Helm, Keycloak and Linux stopped being words in a book.</p>
+                    <div class="timeline-tags" aria-label="Skills">
+                        <span class="tag">Kubernetes</span><span class="tag">Docker</span><span class="tag">Helm</span><span class="tag">Keycloak</span><span class="tag">Release Management</span><span class="tag">Customer Integration</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="timeline-item fade-in">
+                <div class="timeline-marker" aria-hidden="true"><span class="marker-age">II</span></div>
+                <div class="timeline-content parchment">
+                    <span class="timeline-age">The Second Age &middot; T&uuml;rkiye</span>
+                    <h3>Planning Officer &amp; IT Consultant</h3>
+                    <h4>Mespa Medical &mdash; medical technology</h4>
+                    <p>Project planning and IT consulting in a medical technology company &mdash; the translation layer between clinical requirements, technical teams and business operations.</p>
+                    <div class="timeline-tags" aria-label="Skills">
+                        <span class="tag">Project Planning</span><span class="tag">IT Consulting</span><span class="tag">Medical Technology</span>
+                    </div>
+                </div>
+            </li>
+
+            <li class="timeline-item fade-in">
+                <div class="timeline-marker" aria-hidden="true"><span class="marker-age">I</span></div>
+                <div class="timeline-content parchment">
+                    <span class="timeline-age">The First Age &middot; where it began</span>
+                    <h3>R&amp;D Engineer <em>(student &rarr; full-time)</em></h3>
+                    <h4>Liberta Software Inc. &mdash; industrial automation</h4>
+                    <p>Hired as a student, kept on as an engineer. I developed barcode sensor systems in partnership with <strong>SICK AG</strong> and built a health-tracking application for veterinary use. Embedded systems, real hardware, real deadlines &mdash; the foundation everything else was built on.</p>
+                    <div class="timeline-tags" aria-label="Skills">
+                        <span class="tag">R&amp;D</span><span class="tag">Embedded Systems</span><span class="tag">Barcode Sensors</span><span class="tag">SICK AG</span><span class="tag">App Development</span>
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </div>
+</section>
+
+
+<!-- ===== CHAPTER III — THE ARTIFACTS (projects) ===== -->
+<section class="section" id="projects" aria-labelledby="projects-title">
+    <div class="container">
+        <header class="section-header fade-in">
+            <span class="section-chapter">Chapter III</span>
+            <h2 class="section-title" id="projects-title">The Artifacts</h2>
+            <svg class="filigree" viewBox="0 0 168 14" fill="none" stroke="currentColor" aria-hidden="true"><path d="M2 7h56M110 7h56" stroke-width="1"/><path d="M84 1.5 89 7l-5 5.5L79 7z" fill="currentColor" stroke="none"/><circle cx="66" cy="7" r="1.8" fill="currentColor" stroke="none"/><circle cx="102" cy="7" r="1.8" fill="currentColor" stroke="none"/><path d="M58 7c4-4 8-4 8 0-4 4-8 4-8 0z" fill="currentColor" stroke="none" opacity=".55"/><path d="M110 7c-4-4-8-4-8 0 4 4 8 4 8 0z" fill="currentColor" stroke="none" opacity=".55"/></svg>
+            <p class="section-tagline">Things forged, tested, and left out in the open for inspection</p>
+        </header>
+
+        <div class="projects-grid">
+
+            <!-- FLAGSHIP -->
+            <article class="project-card flagship parchment fade-in">
+                <div class="project-head">
+                    <div>
+                        <p class="project-kicker">The Master Work</p>
+                        <h3 class="project-title">FHIR Encounter Summary</h3>
+                    </div>
+                    <span class="project-seal">TypeScript &middot; 2026</span>
+                </div>
+
+                <p class="project-desc">Takes the scattered FHIR resources of a single hospital encounter, folds them into one ordered domain model, generates a German <em>Epikrise</em> from it with a locally hosted language model &mdash; and then marks every number in that generated paragraph as backed or unbacked by the source data.</p>
+
+                <p class="project-desc">The engineering is the normalising, not the model: one encounter arrives as 35 separate <code>Observation</code> resources, with dates hiding under four different field names. The grounding check is what makes the output reviewable rather than merely plausible &mdash; it caught an age the model had invented outright.</p>
+
+                <p class="project-desc"><em>Synthetic data only</em> &mdash; every record comes from Synthea. Inference runs locally, so nothing leaves the machine.</p>
+
+                <div class="project-tags">
+                    <span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">Docker Compose</span><span class="tag">HAPI FHIR</span><span class="tag">Ollama</span><span class="tag">Vitest</span><span class="tag">CI</span>
+                </div>
+
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/abdulkadir-yz/fhir-encounter-summary" target="_blank" rel="noopener noreferrer">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-codex"/></svg>
+                        Read the source
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-external"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- events-platform -->
+            <article class="project-card parchment fade-in">
+                <div class="project-head">
+                    <h3 class="project-title">Events Platform</h3>
+                    <span class="project-seal">2026</span>
+                </div>
+                <p class="project-desc">A full-stack event application: browse upcoming events, register, sign in, and create your own once authenticated. The React&nbsp;+&nbsp;Vite frontend is entirely mine &mdash; routing, the authentication flow, protected routes and every component &mdash; built against an Express API provided as starter code.</p>
+                <div class="project-tags">
+                    <span class="tag">React</span><span class="tag">Vite</span><span class="tag">React Router</span><span class="tag">Tailwind</span><span class="tag">JWT</span><span class="tag">Express</span>
+                </div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/abdulkadir-yz/events-platform" target="_blank" rel="noopener noreferrer">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-codex"/></svg>
+                        Read the source
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-external"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- fake-e-commerce -->
+            <article class="project-card parchment fade-in">
+                <div class="project-head">
+                    <h3 class="project-title">Storefront</h3>
+                    <span class="project-seal">2026</span>
+                </div>
+                <p class="project-desc">An e-commerce demo on the Next.js App Router: product listing, dynamic detail routes, and a cart that survives a refresh through Context plus <code>localStorage</code>. Written to learn where the line between server and client components actually falls &mdash; by building a real feature end to end rather than a toy.</p>
+                <div class="project-tags">
+                    <span class="tag">Next.js 16</span><span class="tag">React 19</span><span class="tag">Tailwind 4</span><span class="tag">App Router</span><span class="tag">Context API</span>
+                </div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/abdulkadir-yz/fake-e-commerce" target="_blank" rel="noopener noreferrer">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-codex"/></svg>
+                        Read the source
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-external"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- wbs-pokedex -->
+            <article class="project-card parchment fade-in">
+                <div class="project-head">
+                    <h3 class="project-title">Pok&eacute;dex</h3>
+                    <span class="project-seal">2026</span>
+                </div>
+                <p class="project-desc">A refactoring exercise with teeth: an existing Pok&eacute;dex rebuilt as a multi-page application on Vite, with Vanilla JS reorganised into ES modules. Search, type filters, graceful empty and error states, and a personal journal persisted locally.</p>
+                <div class="project-tags">
+                    <span class="tag">Vite</span><span class="tag">Tailwind</span><span class="tag">ES Modules</span><span class="tag">PokéAPI</span><span class="tag">MPA</span>
+                </div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/abdulkadir-yz/wbs-pokedex" target="_blank" rel="noopener noreferrer">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-codex"/></svg>
+                        Read the source
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-external"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- flask-mini-project -->
+            <article class="project-card parchment fade-in">
+                <div class="project-head">
+                    <h3 class="project-title">Flask Registration Service</h3>
+                    <span class="project-seal">2026</span>
+                </div>
+                <p class="project-desc">A small Flask application wired to a cloud PostgreSQL instance on Neon through SQLAlchemy &mdash; registration, duplicate-email validation, and a user listing. Deliberately minimal: the point was ORM sessions, template inheritance, and keeping secrets out of the repository.</p>
+                <div class="project-tags">
+                    <span class="tag">Python 3.13</span><span class="tag">Flask</span><span class="tag">SQLAlchemy</span><span class="tag">PostgreSQL</span><span class="tag">Jinja2</span>
+                </div>
+                <div class="project-links">
+                    <a class="project-link" href="https://github.com/abdulkadir-yz/flask-mini-project" target="_blank" rel="noopener noreferrer">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-codex"/></svg>
+                        Read the source
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-external"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- private SaaS -->
+            <article class="project-card parchment fade-in">
+                <div class="project-head">
+                    <h3 class="project-title">The Sealed Work</h3>
+                    <span class="project-seal">Private &middot; ongoing</span>
+                </div>
+                <p class="project-desc">A SaaS product I am building alone, end to end: an ASP.NET Core backend, a Next.js frontend, LLM orchestration through Semantic Kernel, Stripe for payments, and Azure for deployment. The repository stays closed for now &mdash; but I am glad to walk through the architecture in conversation.</p>
+                <div class="project-tags">
+                    <span class="tag">ASP.NET Core</span><span class="tag">Next.js</span><span class="tag">Semantic Kernel</span><span class="tag">Stripe</span><span class="tag">Azure</span>
+                </div>
+                <div class="project-links">
+                    <a class="project-link" href="#contact">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-letter"/></svg>
+                        Ask me about it
+                    </a>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="projects-more fade-in">
+            Learning repositories &mdash; course work, exercises, notes &mdash; live openly on
+            <a href="https://github.com/abdulkadir-yz?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
+            alongside these.
+        </p>
+    </div>
+</section>
+
+
+
+
+<!-- ===== CHAPTER V — THE ARMOURY ===== -->
+<section class="section" id="techstack" aria-labelledby="techstack-title">
+    <div class="container">
+        <header class="section-header fade-in">
+            <span class="section-chapter">Chapter IV</span>
+            <h2 class="section-title" id="techstack-title">The Armoury</h2>
+            <svg class="filigree" viewBox="0 0 168 14" fill="none" stroke="currentColor" aria-hidden="true"><path d="M2 7h56M110 7h56" stroke-width="1"/><path d="M84 1.5 89 7l-5 5.5L79 7z" fill="currentColor" stroke="none"/><circle cx="66" cy="7" r="1.8" fill="currentColor" stroke="none"/><circle cx="102" cy="7" r="1.8" fill="currentColor" stroke="none"/><path d="M58 7c4-4 8-4 8 0-4 4-8 4-8 0z" fill="currentColor" stroke="none" opacity=".55"/><path d="M110 7c-4-4-8-4-8 0 4 4 8 4 8 0z" fill="currentColor" stroke="none" opacity=".55"/></svg>
+            <p class="section-tagline">Instruments gathered across many campaigns &mdash; and honestly labelled</p>
+        </header>
+
+        <div class="tech-categories">
+            <article class="tech-category parchment fade-in">
+                <div class="tech-cat-header">
+                    <span class="tech-cat-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><use href="#i-sword"/></svg></span>
+                    <div>
+                        <h3>Backend &amp; Services</h3>
+                        <p class="tech-label">Where my centre of gravity sits</p>
+                    </div>
+                </div>
+                <div class="tech-grid"><span class="tech-item">C#</span><span class="tech-item">ASP.NET Core</span><span class="tech-item">Node.js</span><span class="tech-item">Express</span><span class="tech-item">Python</span><span class="tech-item">Flask</span><span class="tech-item">REST APIs</span><span class="tech-item">Entity Framework Core</span></div>
+            </article>
+
+            <article class="tech-category parchment fade-in">
+                <div class="tech-cat-header">
+                    <span class="tech-cat-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><use href="#i-tower"/></svg></span>
+                    <div>
+                        <h3>Interfaces</h3>
+                        <p class="tech-label">The outer walls</p>
+                    </div>
+                </div>
+                <div class="tech-grid"><span class="tech-item">TypeScript</span><span class="tech-item">JavaScript</span><span class="tech-item">React</span><span class="tech-item">Next.js</span><span class="tech-item">Vite</span><span class="tech-item">Tailwind CSS</span><span class="tech-item">HTML5</span><span class="tech-item">CSS3</span></div>
+            </article>
+
+            <article class="tech-category parchment fade-in">
+                <div class="tech-cat-header">
+                    <span class="tech-cat-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><use href="#i-shield"/></svg></span>
+                    <div>
+                        <h3>Data &amp; Infrastructure</h3>
+                        <p class="tech-label">Six years of it &mdash; the part I know in my bones</p>
+                    </div>
+                </div>
+                <div class="tech-grid"><span class="tech-item">SQL Server</span><span class="tech-item">PostgreSQL</span><span class="tech-item">MongoDB</span><span class="tech-item">Docker</span><span class="tech-item">Kubernetes</span><span class="tech-item">Helm</span><span class="tech-item">Linux</span><span class="tech-item">Keycloak</span><span class="tech-item">CI/CD</span><span class="tech-item">Azure</span></div>
+            </article>
+
+            <article class="tech-category parchment fade-in">
+                <div class="tech-cat-header">
+                    <span class="tech-cat-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><use href="#i-spark"/></svg></span>
+                    <div>
+                        <h3>AI &amp; Tooling</h3>
+                        <p class="tech-label">Shipped, not merely read about</p>
+                    </div>
+                </div>
+                <div class="tech-grid"><span class="tech-item">LLM APIs</span><span class="tech-item">Semantic Kernel</span><span class="tech-item">Ollama</span><span class="tech-item">Agentic workflows</span><span class="tech-item">n8n</span><span class="tech-item">Git</span><span class="tech-item">Postman</span><span class="tech-item">Jira</span></div>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== CHAPTER VI — THE LORE ===== -->
+<section class="section section-alt" id="education" aria-labelledby="education-title">
+    <div class="container">
+        <header class="section-header fade-in">
+            <span class="section-chapter">Chapter V</span>
+            <h2 class="section-title" id="education-title">The Lore</h2>
+            <svg class="filigree" viewBox="0 0 168 14" fill="none" stroke="currentColor" aria-hidden="true"><path d="M2 7h56M110 7h56" stroke-width="1"/><path d="M84 1.5 89 7l-5 5.5L79 7z" fill="currentColor" stroke="none"/><circle cx="66" cy="7" r="1.8" fill="currentColor" stroke="none"/><circle cx="102" cy="7" r="1.8" fill="currentColor" stroke="none"/><path d="M58 7c4-4 8-4 8 0-4 4-8 4-8 0z" fill="currentColor" stroke="none" opacity=".55"/><path d="M110 7c-4-4-8-4-8 0 4 4 8 4 8 0z" fill="currentColor" stroke="none" opacity=".55"/></svg>
+            <p class="section-tagline">Scrolls gathered from the great libraries</p>
+        </header>
+
+        <div class="edu-grid">
+            <article class="edu-card parchment fade-in">
+                <span class="edu-icon" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><use href="#i-cap"/></svg></span>
+                <h3>B.Sc. Electrical &amp; Electronics Engineering</h3>
+                <p>Honours degree &middot; GPA 3.43 / 4.00</p>
+                <p class="edu-note">Recognised at Bachelor level by the German ZAB (Zentralstelle f&uuml;r ausl&auml;ndisches Bildungswesen)</p>
+                <span class="badge badge-done">Quest completed</span>
+            </article>
+
+            <article class="edu-card parchment fade-in">
+                <span class="edu-icon" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><use href="#i-codex"/></svg></span>
+                <h3>Software Engineering &amp; AI</h3>
+                <p>WBS Coding School &mdash; Germany</p>
+                <p class="edu-note">AZAV-certified programme</p>
+                <span class="badge badge-progress"><i class="dot" aria-hidden="true"></i> On the journey</span>
+            </article>
+
+            <article class="edu-card parchment fade-in">
+                <span class="edu-icon" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><use href="#i-shield"/></svg></span>
+                <h3>AZ-900 &mdash; Azure Fundamentals</h3>
+                <p>Microsoft certification</p>
+                <p class="edu-note">Cloud concepts, Azure services, governance</p>
+                <span class="badge badge-progress"><i class="dot" aria-hidden="true"></i> On the journey</span>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== CHAPTER VII — THE QUEST ===== -->
+<section class="section" id="roadmap" aria-labelledby="roadmap-title">
+    <div class="container">
+        <header class="section-header fade-in">
+            <span class="section-chapter">Chapter VI</span>
+            <h2 class="section-title" id="roadmap-title">The Quest</h2>
+            <svg class="filigree" viewBox="0 0 168 14" fill="none" stroke="currentColor" aria-hidden="true"><path d="M2 7h56M110 7h56" stroke-width="1"/><path d="M84 1.5 89 7l-5 5.5L79 7z" fill="currentColor" stroke="none"/><circle cx="66" cy="7" r="1.8" fill="currentColor" stroke="none"/><circle cx="102" cy="7" r="1.8" fill="currentColor" stroke="none"/><path d="M58 7c4-4 8-4 8 0-4 4-8 4-8 0z" fill="currentColor" stroke="none" opacity=".55"/><path d="M110 7c-4-4-8-4-8 0 4 4 8 4 8 0z" fill="currentColor" stroke="none" opacity=".55"/></svg>
+            <p class="section-tagline">&ldquo;Even the smallest person can change the course of the future.&rdquo; &mdash; Galadriel</p>
+        </header>
+
+        <div class="quest-map" role="list" aria-label="Career roadmap">
+            <div class="quest-node active fade-in" role="listitem">
+                <span class="quest-pin" aria-hidden="true">
+                    <svg viewBox="0 0 40 52" width="42" height="54" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 2C10 2 2 10 2 20c0 14 18 30 18 30s18-16 18-30C38 10 30 2 20 2z" fill="var(--accent)"/>
+                        <circle cx="20" cy="20" r="8" fill="var(--bg-primary)"/>
+                        <text x="20" y="23.5" text-anchor="middle" font-size="8" fill="var(--accent)" font-weight="bold" font-family="JetBrains Mono, monospace">01</text>
+                    </svg>
+                </span>
+                <span class="quest-place">The Shire</span>
+                <p class="quest-realm">Where every journey begins</p>
+                <div class="quest-card">
+                    <h3>Backend Engineer</h3>
+                    <ul>
+                        <li>C# / ASP.NET Core</li>
+                        <li>REST APIs &amp; EF Core</li>
+                        <li>SQL &amp; data modelling</li>
+                    </ul>
+                    <span class="badge badge-done">Current quest</span>
+                </div>
+            </div>
+
+            <div class="quest-path" aria-hidden="true">
+                <svg viewBox="0 0 100 18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4,9 Q25,2 50,9 Q75,16 96,9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5,4"/>
+                    <polygon points="91,6 99,9 91,12" fill="currentColor"/>
+                </svg>
+            </div>
+
+            <div class="quest-node fade-in" role="listitem">
+                <span class="quest-pin" aria-hidden="true">
+                    <svg viewBox="0 0 40 52" width="42" height="54" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 2C10 2 2 10 2 20c0 14 18 30 18 30s18-16 18-30C38 10 30 2 20 2z" fill="var(--accent-muted)" opacity="0.7"/>
+                        <circle cx="20" cy="20" r="8" fill="var(--bg-primary)"/>
+                        <text x="20" y="23.5" text-anchor="middle" font-size="8" fill="var(--accent)" font-weight="bold" font-family="JetBrains Mono, monospace">02</text>
+                    </svg>
+                </span>
+                <span class="quest-place">Rivendell</span>
+                <p class="quest-realm">Where the council convenes</p>
+                <div class="quest-card">
+                    <h3>Microservices &amp; Cloud</h3>
+                    <ul>
+                        <li>Docker &amp; Kubernetes</li>
+                        <li>API gateways</li>
+                        <li>CI/CD on Azure</li>
+                    </ul>
+                    <span class="badge badge-progress"><i class="dot" aria-hidden="true"></i> On the map</span>
+                </div>
+            </div>
+
+            <div class="quest-path" aria-hidden="true">
+                <svg viewBox="0 0 100 18" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4,9 Q25,2 50,9 Q75,16 96,9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5,4"/>
+                    <polygon points="91,6 99,9 91,12" fill="currentColor"/>
+                </svg>
+            </div>
+
+            <div class="quest-node fade-in" role="listitem">
+                <span class="quest-pin" aria-hidden="true">
+                    <svg viewBox="0 0 40 52" width="42" height="54" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 2C10 2 2 10 2 20c0 14 18 30 18 30s18-16 18-30C38 10 30 2 20 2z" fill="var(--accent-muted)" opacity="0.45"/>
+                        <circle cx="20" cy="20" r="8" fill="var(--bg-primary)"/>
+                        <text x="20" y="23.5" text-anchor="middle" font-size="8" fill="var(--accent)" font-weight="bold" font-family="JetBrains Mono, monospace">03</text>
+                    </svg>
+                </span>
+                <span class="quest-place">Mordor</span>
+                <p class="quest-realm">One does not simply walk in. That is rather the point.</p>
+                <div class="quest-card">
+                    <h3>AI &amp; Agentic Systems</h3>
+                    <ul>
+                        <li>LLM orchestration</li>
+                        <li>Semantic Kernel</li>
+                        <li>Agentic workflows</li>
+                    </ul>
+                    <span class="badge badge-progress"><i class="dot" aria-hidden="true"></i> The hardest realm</span>
+                </div>
+            </div>
+        </div>
+
+        <blockquote class="pull-quote fade-in">
+            &ldquo;Engineering taught me how systems fail. Software engineering teaches me how to build ones that don&rsquo;t.&rdquo;
+        </blockquote>
+    </div>
+</section>
+
+
+<!-- ===== CHAPTER VIII — SEND A RAVEN ===== -->
+<section class="section section-alt" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+        <header class="section-header fade-in">
+            <span class="section-chapter">Chapter VII</span>
+            <h2 class="section-title" id="contact-title">Send a Raven</h2>
+            <svg class="filigree" viewBox="0 0 168 14" fill="none" stroke="currentColor" aria-hidden="true"><path d="M2 7h56M110 7h56" stroke-width="1"/><path d="M84 1.5 89 7l-5 5.5L79 7z" fill="currentColor" stroke="none"/><circle cx="66" cy="7" r="1.8" fill="currentColor" stroke="none"/><circle cx="102" cy="7" r="1.8" fill="currentColor" stroke="none"/><path d="M58 7c4-4 8-4 8 0-4 4-8 4-8 0z" fill="currentColor" stroke="none" opacity=".55"/><path d="M110 7c-4-4-8-4-8 0 4 4 8 4 8 0z" fill="currentColor" stroke="none" opacity=".55"/></svg>
+            <p class="section-tagline">The ravens of Erebor carry messages swiftly across the known world</p>
+        </header>
+
+        <p class="contact-text fade-in">Open to <strong>fullstack and backend roles</strong> in Germany and the EU &mdash; and always glad to talk about backend architecture, cloud, or getting language models to behave in production.</p>
+
+        <div class="contact-links">
+            <a href="mailto:abdulkadir.yz99@gmail.com" class="contact-card fade-in">
+                <span class="contact-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><use href="#i-letter"/></svg></span>
+                <strong>By Scroll</strong>
+                <p>abdulkadir.yz99@gmail.com</p>
+            </a>
+            <a href="https://www.linkedin.com/in/abdulkadir-yilmaz" target="_blank" rel="noopener noreferrer" class="contact-card fade-in">
+                <span class="contact-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><use href="#i-tower"/></svg></span>
+                <strong>The Guild Hall</strong>
+                <p>LinkedIn &middot; abdulkadir-yilmaz</p>
+            </a>
+            <a href="https://github.com/abdulkadir-yz" target="_blank" rel="noopener noreferrer" class="contact-card fade-in">
+                <span class="contact-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><use href="#i-codex"/></svg></span>
+                <strong>The Codex</strong>
+                <p>GitHub &middot; abdulkadir-yz</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-ring" aria-hidden="true">
+        <svg viewBox="0 0 280 52" width="280" height="52" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="140" cy="26" rx="128" ry="19" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.3"/>
+            <ellipse cx="140" cy="26" rx="108" ry="13" fill="none" stroke="currentColor" stroke-width="0.6" opacity="0.18"/>
+        </svg>
+    </div>
+    <p class="footer-inscription">
+        <em>&ldquo;One Code to rule them all, One Code to find them,<br>One Code to bring them all and in the darkness bind them.&rdquo;</em>
+    </p>
+    <p class="footer-copy">&copy; 2026 Abdulkadir Yilmaz &middot; Built by hand with <span class="footer-code">clean code</span></p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
